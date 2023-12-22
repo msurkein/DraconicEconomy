@@ -5,7 +5,7 @@ SLASH_RESETECONOMY1 = "/economyreset";
 local TSM_API = nil;
 
 local function log(name, value)
-    print(name.." = "..tostring(value))
+	print(name.." = "..tostring(value))
 end
 local myFrame = CreateFrame("Frame");
 
@@ -13,8 +13,8 @@ myFrame:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED");
 myFrame:RegisterEvent("ADDON_LOADED");
 myFrame:RegisterEvent("PLAYER_DEAD");
 myFrame:SetScript("OnEvent",
-    function(self, event, arg1, arg2, arg3, arg4)
-        if (event == "ADDON_LOADED" and arg1 == "DraconicEconomy") then
+	function(self, event, arg1, arg2, arg3, arg4)
+		if (event == "ADDON_LOADED" and arg1 == "DraconicEconomy") then
 			if AugmentUses == nil then
 				AugmentUses = 0;
 			end
@@ -37,12 +37,12 @@ myFrame:SetScript("OnEvent",
 				print("Current Time: "..date("%Y-%m-%d %H:%M:%S", CurrentTime));
 				print("Next Eligible Time: "..date("%Y-%m-%d %H:%M:%S", NextEligibleTime));
 			end
-        end
+	end
 		if (event == "PLAYER_DEAD") then
 			print("Resetting augment rune eligibility.");
 			LastAugmentUse = 0;
 		end
-    end
+	end
 );
 
 function GetTSM()
@@ -104,7 +104,7 @@ function IncrementCosts()
 end
 
 function SlashCmdList.ECONOMY(msg, editBox)
-    PrintOutput();
+	PrintOutput();
 end
 
 function SlashCmdList.RESETECONOMY(msg, editBox)
