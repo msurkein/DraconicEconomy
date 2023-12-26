@@ -1,7 +1,7 @@
-## Interface: 100002
+## Interface: 100200
 ## Title: Draconic Economy
 ## Notes: An addon that tracks how bad you are at the economy
 ## Author: Dwayne-Duskwood <Computer>
-## Version: 1.0.0
+## Version: 1.0.2
 ## SavedVariablesPerCharacter: AugmentUses, CumulativeSavings, LastAugmentUse
 DraconicEconomy.lua

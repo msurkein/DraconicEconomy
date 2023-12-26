@@ -93,7 +93,7 @@ function FormatMoney(amount)
 end
 
 function SetCurrentPrice()
-  CurrentPrice = GetTSM().GetCustomPriceValue("dbregionmarketavg", "i:201325");
+  CurrentPrice = GetTSM().GetCustomPriceValue("dbregionmarketavg", "i:201325") or 7000000;
 end
 
 
