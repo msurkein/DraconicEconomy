@@ -3,6 +3,7 @@ SLASH_ECONOMY1 = "/economy";
 SLASH_RESETECONOMY1 = "/economyreset";
 
 local TSM_API = nil;
+local DEFAULT_RUNE_PRICE = 6000000;
 
 local function log(name, value)
   print(name.." = "..tostring(value))
@@ -59,7 +60,7 @@ function GetTSM()
         return self;
       end
       function MockTSM.GetCustomPriceValue(db, it)
-        return 7000000;
+        return DEFAULT_RUNE_PRICE;
       end
       function MockTSM.FormatMoneyString(amount)
         g = math.floor(amount / 100 / 100);
@@ -93,7 +94,7 @@ function FormatMoney(amount)
 end
 
 function SetCurrentPrice()
-  CurrentPrice = GetTSM().GetCustomPriceValue("dbregionmarketavg", "i:201325") or 7000000;
+  CurrentPrice = GetTSM().GetCustomPriceValue("dbregionmarketavg", "i:201325") or DEFAULT_RUNE_PRICE;
 end
 
 
