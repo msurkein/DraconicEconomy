@@ -2,6 +2,6 @@
 ## Title: Draconic Economy
 ## Notes: An addon that tracks how bad you are at the economy
 ## Author: Dwayne-Duskwood <Computer>
-## Version: 1.0.2
+## Version: 1.0.3
 ## SavedVariablesPerCharacter: AugmentUses, CumulativeSavings, LastAugmentUse
 DraconicEconomy.lua
