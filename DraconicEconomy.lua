@@ -3,7 +3,7 @@ SLASH_ECONOMY1 = "/economy";
 SLASH_RESETECONOMY1 = "/economyreset";
 
 local TSM_API = nil;
-local DEFAULT_RUNE_PRICE = 6000000;
+local DEFAULT_RUNE_PRICE = 5000000;
 
 local function log(name, value)
   print(name.." = "..tostring(value))
