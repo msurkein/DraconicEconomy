@@ -1,4 +1,4 @@
-## Interface: 100200
+## Interface: 100207, 110000, 110002
 ## Title: Draconic Economy
 ## Notes: An addon that tracks how bad you are at the economy
 ## Author: Dwayne-Duskwood <Computer>
